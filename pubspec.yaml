@@ -1,0 +1,70 @@
+name: didi_wifi
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  flutter_native_splash: ^2.3.1
+  flutter_svg: ^2.0.7
+
+  shimmer: ^3.0.0
+
+  shared_preferences: ^2.2.0
+#  provider: ^6.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  image_path: assets/logo/launcher.png
+  android: true
+  ios: true
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  adaptive_icon_background: "#201823"
+  adaptive_icon_foreground: assets/logo/launcher_f.png
+
+flutter_native_splash:
+  android: true
+  ios: true
+  color: "#201823"
+  image: assets/logo/splash.png
+  android_12:
+    color: "#201823"
+    image: assets/logo/splash.png
+
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/logo/
+
+  fonts:
+    #    - family: icons
+    #      fonts:
+    #        - asset: fonts/icons.ttf
+    - family: Vazir
+      fonts:
+        - asset: fonts/Vazir.ttf
