@@ -1,6 +1,8 @@
+import 'package:crypto/crypto.dart';
 import 'package:didi_wifi/res/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:http/http.dart' as http;
 
 void main() {
   runApp(const MyApp());
@@ -121,11 +123,21 @@ class DiDi extends StatefulWidget {
 }
 
 class _DiDiState extends State<DiDi> {
+  static const List<String> diGiUrls = [
+    "http://wifi.didi.ir/login",
+    "http://zne.didi.ir/login",
+    "http://self.didi.ir/login",
+    "http://lib.didi.ir/login",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const Center(
-        child: Text('data'),
+      body: Center(
+        child: Text(
+          '->',
+          style: Theme.of(context).textTheme.labelLarge,
+        ),
       ),
     );
   }
